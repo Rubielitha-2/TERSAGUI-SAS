@@ -1,0 +1,385 @@
+*{
+    font-family: '', sans-serif;
+}
+
+body{
+    background-image:linear-gradient(#ffffffb1,#ffffffb1),url('./IMAGENES/img\ fondo\ principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.myTittle{
+    font-family: "Poppins", sans-serif;
+  
+    font-size: 3.0rem;
+    color: #175555;
+    margin-bottom: 60px;
+}
+
+p{
+    font-size: 1.0rem;
+    color: #080908;
+}
+
+
+
+/*My botton*/
+.Buttonruby2{
+    font-size: 30px;
+    color: blue;
+    border: none;
+    background-color: transparent;
+
+}
+.Buttonruby3{
+    font-size: 30px;
+    color: green;
+    border: none;
+    background-color: transparent;
+
+
+}
+.Buttonruby4{
+    font-size: 30px;
+    color:purple;
+    border: none;
+    background-color: transparent;
+
+}
+.Buttonruby {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Buttonruby:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .Buttonruby:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: #3ccd6a;
+    background: linear-gradient(
+      90deg,
+      #3ccd6a 0%,
+      #054207 49%,
+      #054207(0, 212, 255, 1) 100%
+    );
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*tamaño-letra*/
+  p{
+    font-size: 20px;
+
+  }
+
+
+
+
+.myTittleCard{
+    font-size: 1.5rem;
+    color:rgb(3, 42, 3) !important;
+    font-family: 'pacifico', cursive;
+    font-weight: 700;
+}
+
+.titulo-servicios{
+    font-family: "Poppins", sans-serif;
+  text-shadow: 0px 0px 10px #3ccd6a;
+    font-size: 3.0rem;
+    color: #175555;
+    margin-bottom: 60px;
+
+}
+
+.stars{
+    position: absolute;
+    opacity: 0;
+    top: -.3em;
+    right: -.3em;
+    height: 100%;
+    transition: transform 300ms, opacity 150ms;
+}
+
+
+.stars :nth-child(n){
+    fill: #D694B2;
+}
+
+.buttonCard{
+    position: relative;
+    cursor: pointer;
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 40px;
+    font-weight: bolder;
+    transition: 150ms, box-shadow 150ms;
+    box-shadow: 0 0  #D694B2;
+    background-color: #F3E7E5;
+    color: #a7577b;
+}
+
+.buttonCard:hover{
+    transform: translate(.3em, -.3em);
+    box-shadow: -.3em .3em #D694B2;
+}
+
+.buttonCard:hover > .stars{
+    opacity: 1;
+    transform: translate(.2em, -2em);
+}
+
+.buttonCard:active > .stars :nth-child(n){
+    fill: #ccc;
+}
+
+
+
+
+
+
+.myFooter{
+    background: rgba(255, 253, 253, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 253, 253, 0.3);
+    padding: 20px;
+  
+  }
+  
+  .redsocial{
+    display: flex;
+    height: 70px;
+    width: 270px;
+  }
+
+  .redsocial svg{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+
+  .redsocial .social-link1, .redsocial .social-link2, .redsocial .social-link3, .redsocial .social-link4{
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+
+  .redsocial svg{
+    transform: scale(1);
+  }
+  
+
+  .redsocial .social-link1:hover{
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.5s linear;
+  }
+
+
+  .redsocial .social-link2:hover{
+    background-color: #00ccff;
+    animation: bounce_613 0.5s linear;
+  }
+
+    .redsocial .social-link3:hover{
+        background-color: #58f2a2;
+        animation: bounce_613 0.5s linear;
+    }
+
+    .redsocial .social-link4:hover{
+        background-color: #13a50bdb;
+        animation: bounce_613 0.5s linear;
+    }
+
+
+    @keyframes bounce_613{
+        40%{
+            transform: scale(1.4);
+        }
+        60%{
+            transform: scale(0.8);
+        }
+        80%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+
+
+
+
+@media (max-width: 876px ){
+    .myTittle{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .contentLand{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.31);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.3px);
+        -webkit-backdrop-filter: blur(6.3px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 20px;
+    }
+
+    .myCard{
+        background: rgba(237, 175, 203, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        -webkit-backdrop-filter: blur(7.8px);
+        border: 1px solid rgba(255, 221, 236, 0.51);
+        border-radius: 40px;
+
+    }
+}
+.myfooter {
+    background-color: #2a9c2a;
+    margin-top: 20px;
+  }
+  
+  .enlacesfooter{
+    font-size: 25px;
+    color: #DBDBDB;
+    text-decoration: none;
+    padding: 20px;
+  }
+  
+  .enlacesfooter:hover {
+    font-size: 32px;
+    color: black;
+  }
+  
+  .contacto-footer {
+    font-size: 29px;
+    color: #DBDBDB;
+    font-family: "Dancing Script", Fredoka;
+  }
+  
+  .textfooter {
+    color: #DBDBDB;
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+  }
+  
+  .icon-footer {
+    color: #DBDBDB;
+    font-size: 30px;
+    padding-right: 20px;
+  }
+  
+  .icon-footer:hover {
+    font-size: 35px;
+    color:black;
+
+  }
+  /*style-fomulario*/
+  
+  .titulo-formulario{
+   font-family: 'pacifico', cursive;
+  text-shadow: 0px 0px 10px #3ccd6a;
+    font-size: 3.0rem;
+    color: #175555;
+    margin-bottom: 60px;
+
+  }
+  .mystyle{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'pacifico', cursive;
+    background:#26b55391;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid #26b55391(255, 221, 236, 0.51);
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.myform{
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 9px 0px 9px 10px;
+  border: none;
+  font-size: 18px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
